@@ -50,7 +50,7 @@ void last(int arr[], int n, int a)
 
 int main()
 {
-    int arr[10]= {1, 3, 4, 5, 5, 5, 6, 8, 9, 11};
+    int arr[10]= {1, 3, 4, 6, 9, 9, 9, 13, 15, 18};
     int n= sizeof(arr)/sizeof(arr[0]);
     int a;
     cout<<"Enter the number to be searched : ";
