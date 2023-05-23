@@ -19,7 +19,7 @@ void bubblesort(int arr[], int n)
 
 int main()
 {
-    int arr[10]= {1, 5, 7, 8, 2, 5, 2, 7, 0, 9};
+    int arr[10]= {1, 5, 6, 8, 2, 5, 2, 8, 0, 9};
     int m= sizeof(arr)/sizeof(arr[0]);
     int k;
     int a;
