@@ -18,9 +18,8 @@ int binarysearch(int arr[], int n, int x)
         else
         if(arr[mid]>x)
             high=mid-1;
-        else
-            return -1;
     }
+    return -1;
 }
 
 int main()
