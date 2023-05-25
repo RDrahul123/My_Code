@@ -26,7 +26,7 @@ int main()
 {
     int arr[10]= {1, 3, 5, 6, 8, 9, 10, 13, 15, 19};
     int n = sizeof(arr)/sizeof(arr[0]);  
-    cout << "Enter the number to be searched: ";
+    cout <<"Enter the number to be searched: ";
     int x;
     cin >> x;
     int ans = binarysearch(arr, n, x);
