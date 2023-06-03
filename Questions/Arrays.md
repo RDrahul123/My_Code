@@ -12,3 +12,9 @@
 10. https://leetcode.com/problems/plus-one/
 11. https://leetcode.com/problems/contains-duplicate/
 12. https://leetcode.com/problems/merge-sorted-array/
+13. https://leetcode.com/problems/permutations-ii/
+14. https://leetcode.com/problems/permutations/
+15. https://leetcode.com/problems/first-missing-positive/
+16. https://leetcode.com/problems/combination-sum-ii/
+17. https://leetcode.com/problems/valid-sudoku/
+18. https://leetcode.com/problems/next-permutation/
