@@ -12,4 +12,5 @@ It includes topics such as:
 - Heap
 - Sorting Techniques
 - Dynamic Programming 
-<img width="960" alt="image" src="https://github.com/RDrahul123/My_Code/assets/44129972/01a851a8-7bf4-4038-82c9-c4130c1ba7bc">
+
+<img width="960" alt="Screenshot 2023-06-04 003338" src="https://github.com/RDrahul123/My_Code/assets/44129972/d49c1ada-ff6a-4b14-8407-9fa4cb8c9bea">
