@@ -8,3 +8,4 @@
 6. https://www.geeksforgeeks.org/ceiling-in-a-sorted-array/
 7. https://www.geeksforgeeks.org/floor-in-a-sorted-array/
 8. https://www.geeksforgeeks.org/allocate-minimum-number-pages/
+9. https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
