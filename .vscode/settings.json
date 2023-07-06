@@ -47,5 +47,7 @@
         "cinttypes": "cpp",
         "typeinfo": "cpp"
     },
-    "cmake.sourceDirectory": "/workspaces/My_Code"
+    "cmake.sourceDirectory": "/workspaces/My_Code",
+    "code-runner.runInTerminal": true,
+    "code-runner.saveFileBeforeRun": true
 }
