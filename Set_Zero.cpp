@@ -5,7 +5,7 @@ using namespace std;
 void print1(vector<vector<int>> nums)
 {
     int n= nums.size();
-    cout<<"[";
+    cout<<"["<<endl;
     for(int i=0; i<n; i++)
     {
         cout<<"[";
@@ -13,7 +13,7 @@ void print1(vector<vector<int>> nums)
         {
             cout<<nums[i][j]<<",";
         }
-        cout<<"],";
+        cout<<"]"<<endl;
     }
     cout<<"]";
 }
