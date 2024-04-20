@@ -1,11 +1,11 @@
 # My_Code
 ### My Coding Area
 
-Welcome to my code repository! This repository serves as a centralized location for all your code and documents related to data structures, algorithms, and problem-solving techniques.
+Welcome to my code repository! This repository serves as a centralized location for all my code and documents related to data structures, algorithms, and problem-solving techniques.
 
 ## Overview
 
-This repository is organized to help you learn, practice, and master various data structures and algorithms commonly used in computer science and software engineering. Whether you're a beginner looking to grasp the basics or an experienced developer aiming to sharpen your skills, you'll find resources here to suit your needs.
+This repository is organized and help you and me to learn, practice, and master various data structures and algorithms commonly used in computer science and software engineering. Whether you're a beginner looking to grasp the basics or an experienced developer aiming to sharpen your skills, you'll find resources here to suit your needs.
 
 ## Content
 
