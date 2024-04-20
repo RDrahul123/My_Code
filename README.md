@@ -1,7 +1,7 @@
 # My_Code
 ### My Coding Area
 
-Welcome to the my code repository! This repository serves as a centralized location for all your code and documents related to data structures, algorithms, and problem-solving techniques.
+Welcome to my code repository! This repository serves as a centralized location for all your code and documents related to data structures, algorithms, and problem-solving techniques.
 
 ## Overview
 
