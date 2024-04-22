@@ -8,10 +8,19 @@ void swap(int* a, int* b)
     *b = temp; 
 }
 
-int selectionsort(int arr[], int n)
+void selectionsort(int arr[], int n)
 {
     int a;
-    for()
+    for(int i=0; i<n; i++)
+    {
+        a = i;
+        for(int j=i+1; j<n; j++)
+        {
+            if(arr[j]<arr[a])
+                a = j;
+        }
+        swap(&arr[a], &arr[i]);
+    }
 }
 
 int main()
@@ -20,7 +29,7 @@ int main()
     int n= sizeof(arr)/sizeof(arr[0]);
 
     selectionsort(arr, n);
-    cout<<"Sorted array is : ";
+    cout<<"\nSorted array is : ";
     for(int i=0; i<n; i++)
         cout<<arr[i]<<" ";
     return 0;

@@ -1,25 +1,35 @@
 #include<iostream>
 using namespace std;
 
-int binary(int arr[], int s, int e, int a)
+int rotated_binary(int arr[], int n, int a)
 {
     int mid;
-    int low=s;
-    int high=e;
+    int low=0;
+    int high=n-1;
 
-    for(int i=0; i<high; i++)
+    while(low<=high)    
     {
         mid= (low+high)/2;
-        if(arr[i]==a)
-            return mid-1;
+        if(arr[mid]==a)
+            return mid;
         else
-        if(arr[i]<a)
-            low=mid+1;
+        if(arr[mid]>=arr[low])
+        {
+            if(a>=arr[low] && a<=arr[mid])
+                high=mid-1;
+            else
+                low=mid+1;
+        }
         else
-        if(arr[i]>a)
-            high=mid-1;
+        if(arr[mid]<=arr[low])
+        {
+            if(a>=arr[mid] && a<=arr[high])
+                low= mid+1;
+            else
+                high= mid-1;
+        }
     }
-    return 0;
+    return -1;
 }
 
 int main()
@@ -31,23 +41,9 @@ int main()
     cout<<"Enter the number to be searched: ";
     cin>>a;
     
-    int mid;
-    int low=0;
-    int high= n;
-    int ans;
-
-    mid= (low+high)/2;
-    if(arr[mid]<arr[low])
-    {    
-        ans= binary(arr, mid, high, a);
-        cout<<n-ans;
-    }
-    else
-    if(arr[mid]>arr[low])
-    {
-        ans= binary(arr, low, mid, a);
-        cout<<n-ans;
-    }
+    int ans= rotated_binary(arr, n, a);
+    cout<<ans;
+    
     
     return 0;
 }
