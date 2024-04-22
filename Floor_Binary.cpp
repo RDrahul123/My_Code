@@ -12,7 +12,7 @@ int floor(int arr[], int n, int a)
     {
         mid= (low+high)/2;
         if(arr[mid]==a)
-            return arr[mid];
+            return mid-1;
         else
         if(arr[mid]<a)
         {
@@ -35,6 +35,6 @@ int main()
     cin>>a;
 
     int ans= floor(arr, n, a);
-    cout<<"Floor of "<<a<<" is : "<<ans<<endl;
+    cout<<"Floor of "<<a<<" is : "<<arr[ans]<<endl;
     return 0;
 }

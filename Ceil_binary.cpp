@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int floor(int arr[], int n, int a)
+int ceil(int arr[], int n, int a)
 {
     int mid;
     int low=0;
@@ -12,7 +12,7 @@ int floor(int arr[], int n, int a)
     {
         mid= (low+high)/2;
         if(arr[mid]==a)
-            return arr[mid];
+            return mid+1;
         else
         if(arr[mid]<a)
             low=mid+1;
@@ -23,7 +23,7 @@ int floor(int arr[], int n, int a)
             high=mid-1;
         }
     }
-    return res;
+    return res+1;
 }
 
 int main()
@@ -34,7 +34,7 @@ int main()
     cout<<"Enter the element : ";
     cin>>a;
 
-    int ans= floor(arr, n, a);
-    cout<<"Ceil of "<<a<<" is : "<<ans<<endl;
+    int ans= ceil(arr, n, a);
+    cout<<"Ceil of "<<a<<" is : "<<arr[ans]<<endl;
     return 0;
 }

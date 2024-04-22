@@ -9,7 +9,7 @@ int binarysearch(int arr[], int n, int x)
 
     for(int i=0; i<n; i++)
     {
-        mid= (low+high)/2;
+        mid= low+(high-low)/2;
         if(arr[mid]==x)
             return mid;
         else
