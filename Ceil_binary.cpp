@@ -12,7 +12,11 @@ int ceil(int arr[], int n, int a)
     {
         mid= (low+high)/2;
         if(arr[mid]==a)
+        {
+            if(arr)
             return mid+1;
+
+        }
         else
         if(arr[mid]<a)
             low=mid+1;
@@ -23,7 +27,8 @@ int ceil(int arr[], int n, int a)
             high=mid-1;
         }
     }
-    return res+1;
+    
+    return 0;
 }
 
 int main()
@@ -35,6 +40,9 @@ int main()
     cin>>a;
 
     int ans= ceil(arr, n, a);
-    cout<<"Ceil of "<<a<<" is : "<<arr[ans]<<endl;
+    if(ans!=0)
+        cout<<"Ceil of "<<a<<" is : "<<arr[ans]<<endl;
+    else
+        cout<<"\nElement is not present in array\n";
     return 0;
 }
