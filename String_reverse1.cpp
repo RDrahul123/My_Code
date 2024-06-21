@@ -5,6 +5,7 @@ using namespace std;
 int main()
 {
         string str;
+        string str2;
         int i;
         getline(cin, str);
         cout<<"Reverse string is: ";
@@ -12,5 +13,6 @@ int main()
         {
             cout<<str[i];
         }
+
     return 0;
 }
