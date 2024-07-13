@@ -75,6 +75,16 @@ class linkedlist        // class for linked list operations
 
             cout<< endl;
         }
+
+        void deletebeginning()      // Deletion in linked list
+        {
+            if(head==nullptr)   // checking the head
+                return;
+            
+            node* temp= head;   // assign the temporary temp value
+            head= head->next;   // assign the head as head->next
+            delete temp;        // Delete temporary temp
+        }
 };
 
 int main()      // main function
@@ -86,7 +96,8 @@ int main()      // main function
     l1.insertend(1);
     l1.insertbeginning(7);
     l1.insertbeginning(8);
-    l1.insertspecific(l1.head->next, 10);   // l1.head->next is indext where to insert the value
+    l1.insertspecific(l1.head->next, 10);   // l1.head->next is index where to insert the value
+    l1.deletebeginning();   // Deleting the beginning or head value
 
     l1.traverse();
 
