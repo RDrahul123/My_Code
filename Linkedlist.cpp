@@ -28,8 +28,8 @@ class linkedlist        // class for linked list operations
         void insertbeginning(int data)  // insertion at beginning
         {
             node* newnode= new node(data);
-            newnode->next= head;    // assigning the value of head to next 
-            head= newnode;  // assinging the head to newnode
+            newnode->next= head;     // assigning the value of head to next 
+            head= newnode;      // assinging the head to newnode
         }
 
         void insertspecific(node* prevnode, int data)
@@ -48,7 +48,7 @@ class linkedlist        // class for linked list operations
         void insertend(int data)    // insert at end 
         {
             node* newnode= new node(data);
-            if(head==nullptr)   // check that head is null or not
+            if(head==nullptr)       // check that head is null or not
             {
                 head=newnode;
             }
@@ -67,6 +67,7 @@ class linkedlist        // class for linked list operations
         void traverse()     //traveral of linked list
         {
             node* current= head;
+            cout<<"Linked list: ";
             while(current!=nullptr)
             {
                 cout<<current->data<<" ";
@@ -75,6 +76,30 @@ class linkedlist        // class for linked list operations
 
             cout<< endl;
         }
+
+        void reverse()      // reverse of linked list
+        {
+            node* current= head, *prev= nullptr, *next;
+
+            while(current!=nullptr)
+            {
+                next= current->next;
+                current->next= prev;
+
+                prev= current;
+                current= next;
+            }
+
+            cout<<"Reversed linkedlist: ";
+            while(prev!=nullptr)
+            {
+                cout<<prev->data<<" ";
+                prev= prev->next;
+            }
+            cout<<endl;
+
+        }
+        
 
         void deletebeginning()      // Deletion in linked list
         {
@@ -100,6 +125,7 @@ int main()      // main function
     l1.deletebeginning();   // Deleting the beginning or head value
 
     l1.traverse();
+    l1.reverse();
 
     return 0;
 }
