@@ -77,24 +77,34 @@ class linkedlist        // class for linked list operations
             cout<< endl;
         }
 
+
+        /*
+        Here complxity of reverse linkedlist function will be
+
+        Time complexity= O(N)
+        Space complexity= O(1)
+        
+        */  
+
+
         void reverse()      // reverse of linked list
         {
-            node* current= head, *prev= nullptr, *next;
+            node* current= head, *prev= nullptr, *next;     // declare a variable prev
 
             while(current!=nullptr)
             {
-                next= current->next;
-                current->next= prev;
+                next= current->next;        // move current pointer to next
+                current->next= prev;        // initiliaze current->next as null using prev
 
-                prev= current;
-                current= next;
+                prev= current;      // move current data to prev
+                current= next;      // move next data to current
             }
 
             cout<<"Reversed linkedlist: ";
-            while(prev!=nullptr)
-            {
-                cout<<prev->data<<" ";
-                prev= prev->next;
+            while(prev!=nullptr)    
+            {   
+                cout<<prev->data<<" ";      // Display prev elements
+                prev= prev->next;           // move prev next forward
             }
             cout<<endl;
 
