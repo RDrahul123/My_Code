@@ -1,3 +1,9 @@
+/*
+Prgram to find how many perfect squares are there before a 
+particular number
+*/
+
+
 #include<iostream>
 using namespace std;
 
